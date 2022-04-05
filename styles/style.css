@@ -76,15 +76,15 @@ header {
 }
 
 @keyframes circle {
-    from { background-color: rgb(115, 240, 77); }
+    from { background-color: rgb(177, 20, 169); }
     20% { border-radius: 50%; }
-    40% { transform: rotateZ(150deg); background-color: rgb(72, 226, 25);}
+    40% { transform: rotateZ(150deg); background-color: rgb(102, 25, 226);}
     45% {width: 150px; height: 150px;}
     50% { background-color: rgb(255, 255, 255);}
     75% { background-color: rgb(255, 255, 255);}
     80% {width: 150px; height: 150px; font-size: 12px;}
-    90% {background-color: brown;}
-    95% {background-color: brown;}
+    90% {background-color: rgb(230, 233, 77);}
+    95% {background-color: rgb(202, 248, 34);}
     to { background-color: #090525;}
 }
 
