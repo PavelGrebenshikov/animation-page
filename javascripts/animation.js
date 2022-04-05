@@ -1,16 +1,29 @@
 window.onload = function() {
-    (function loop() {
-        let text = document.querySelector(".element")
 
+    let text = document.querySelector(".element")
+    let element_anim = document.querySelector(".element");
+    let hrefs = document.querySelectorAll(".href_loc");
+    let wait = document.querySelector(".wait");
+
+    (function loop() {
         if (getComputedStyle(text).backgroundColor == "rgb(255, 255, 255)") {
             text.innerHTML = "Welcome my friend"
+            element_anim.addEventListener("click", repeat);
         }
         requestAnimationFrame(loop);
       })();
+    
+    function repeat() {
+        element_anim.style.animationIterationCount = "infinite";
+        setTimeout(thanks(), 1000);
+    }
+    
+    function thanks() {
+        text.innerHTML = "Thank you.";
+        element_anim.style.animationIterationCount = 2;
+    }
 
     //   redirect location
-
-    let hrefs = document.querySelectorAll(".href_loc");
     
     hrefs[0].addEventListener("click", home);
     hrefs[1].addEventListener("click", github);
