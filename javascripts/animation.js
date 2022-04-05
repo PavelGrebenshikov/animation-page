@@ -8,11 +8,13 @@ window.onload = function() {
     (function loop() {
         if (getComputedStyle(text).backgroundColor == "rgb(255, 255, 255)") {
             text.innerHTML = "Welcome my friend"
-            element_anim.addEventListener("click", repeat);
+        }
+        if (getComputedStyle(text).backgroundColor == "rgb(9, 5, 37)") {
+             element_anim.addEventListener("click", repeat);
         }
         requestAnimationFrame(loop);
-      })();
-    
+    })();
+
     function repeat() {
         element_anim.style.animationIterationCount = "infinite";
         setTimeout(thanks(), 1000);
