@@ -3,8 +3,7 @@ window.onload = function() {
     let text = document.querySelector(".element")
     let element_anim = document.querySelector(".element");
     let hrefs = document.querySelectorAll(".href_loc");
-    let wait = document.querySelector(".wait");
-
+    
     (function loop() {
         if (getComputedStyle(text).backgroundColor == "rgb(255, 255, 255)") {
             text.innerHTML = "Welcome my friend"
