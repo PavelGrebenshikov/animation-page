@@ -65,7 +65,7 @@ header {
     font-size: 32px;
 
     /* animation */
-    animation: circle 4s ease 1s 1 normal fill-mode;
+    animation: circle 4s ease 1s 1 normal;
     animation-play-state: running;
 }
 .element:hover {
